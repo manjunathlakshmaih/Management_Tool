@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Input from "../common/Input";
 import Button from "../common/Button";
 
-const NavBar = () => {
+const NavHeader = () => {
   const [searchValue, setSearchValue] = useState("");
   return (
-    <div className="border-b border-slate-800 px-8 py-5">
+    <header className="border-b border-slate-800 px-8 py-5">
       <div className="flex items-center justify-between">
         <Input
           placeholder="Search..."
@@ -27,8 +27,8 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
-export default NavBar;
+export default NavHeader;
